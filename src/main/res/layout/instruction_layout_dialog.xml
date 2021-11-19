@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:layout_height="550dp"
+    android:layout_gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageViewInstruction"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="280dp"
+                app:layout_constraintBottom_toTopOf="@+id/btnInstructionPlay"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleInstruction"
+                app:srcCompat="@drawable/instruction_pic" />
+
+            <TextView
+                android:id="@+id/titleInstruction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Instructions"
+                android:textColor="#009688"
+                android:textSize="36dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/architects_daughter"
+                android:shadowColor="#000000"
+                android:text="Level 1
+                \nReach 10 points to complete the level.
+                \nLevel 2
+                \nReach 20 points to complete the level.
+                \nLevel 3
+                \nReach 30 points to complete the level.
+                \n \nAfter finishing all the levels, you can continue trying to get the highest score!"
+                android:textColor="#101010"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewInstruction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleInstruction" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/architects_daughter"
+                android:shadowColor="#000000"
+                android:text="Good Luck, Amit!"
+                android:textColor="#101010"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewInstruction"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvLevel" />
+
+            <Button
+                android:id="@+id/btnInstructionPlay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="380dp"
+                android:background="@drawable/rounded_corners_green"
+                android:text="PLAY"
+                android:textSize="10dp"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleInstruction" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/how_to_play"
+        android:title="How To Play"
+        app:showAsAction="always"
+        android:icon="@drawable/how_to_play_icon5"
+        />
+
+    <item android:id="@+id/alarm"
+        android:title="Alarm"
+        app:showAsAction="always"
+        android:icon="@drawable/alarm_icon"
+        />
+</menu>

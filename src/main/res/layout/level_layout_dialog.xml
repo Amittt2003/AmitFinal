@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="390dp"
+    android:layout_gravity="center">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvLevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:shadowColor="#000000"
+                android:text="level 1 completed!"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="#101010"
+                android:textSize="16sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintBottom_toTopOf="@+id/tvLevelGoal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/titleLevel" />
+
+            <TextView
+                android:id="@+id/tvLevelGoal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reach 10 points to complete the next level!"
+                android:textSize="16sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="80dp"
+                android:textColor="#000000"
+                android:textStyle="bold|italic"
+                android:fontFamily="@font/architects_daughter"
+                app:layout_constraintBottom_toTopOf="@+id/imageViewLevel"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/titleLevel" />
+
+            <ImageView
+                android:id="@+id/imageViewLevel"
+                android:layout_width="178dp"
+                android:layout_height="107dp"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/level_pic" />
+
+            <TextView
+                android:id="@+id/titleLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Good Job!"
+                android:fontFamily="@font/architects_daughter"
+                android:textColor="#00FF0A"
+                android:textSize="36dp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnMainMenuLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_red"
+                app:backgroundTint="@null"
+                android:text="Main Menu"
+                android:textSize="10dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLevel" />
+
+            <Button
+                android:id="@+id/btnNextLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_green"
+                app:backgroundTint="@null"
+                android:text="Next Level"
+                android:textSize="10dp"
+                android:layout_marginRight="150dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLevel" />
+
+            <Button
+                android:id="@+id/btnShareLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners_blue"
+                android:text="Share Score"
+                android:textSize="10dp"
+                app:backgroundTint="@null"
+                android:layout_marginTop="70dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageViewLevel" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

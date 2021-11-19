@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".Activities.MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#EEEEEE">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:background="@drawable/back">
+
+                    <ImageView
+                        android:id="@+id/imgBack"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:src="@drawable/menu_background">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Simon Says Memory Game"
+                        android:textSize="18sp"
+                        android:textColor="#ffffff"
+                        android:fontFamily="@font/architects_daughter"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/imgLogin"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/login_icon2"
+                                    android:layout_centerInParent="true">
+                                </ImageView>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btnLogin"
+                                    android:background="@android:color/transparent">
+                                </Button>
+
+                            </RelativeLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/imgRegister"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/register_icon"
+                                    android:layout_centerInParent="true">
+                                </ImageView>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btnRegister"
+                                    android:background="@android:color/transparent">
+                                </Button>
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="180dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginStart="0dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/imgHowToPlay"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/how_to_play_icon5"
+                                    android:layout_centerInParent="true">
+                                </ImageView>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btnHowToPlay"
+                                    android:background="@android:color/transparent">
+                                </Button>
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:layout_gravity="center"
+                            android:layout_marginStart="5dp"
+                            android:orientation="horizontal">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#FFFFFF">
+
+                                <ImageView
+                                    android:id="@+id/imgScoreTable"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:src="@drawable/score_table_icon"
+                                    android:layout_centerInParent="true">
+                                </ImageView>
+
+                                <Button
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:id="@+id/btnScoreTable"
+                                    android:background="@android:color/transparent">
+                                </Button>
+
+                            </RelativeLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="43dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create\nAccount"
+        android:textSize="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="130dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How To\n   Play"
+        android:textSize="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="217dp">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score\nTable"
+        android:textSize="16dp"
+        android:fontFamily="@font/architects_daughter"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginTop="280dp"
+        android:layout_marginStart="325dp">
+    </TextView>
+
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:layout_marginBottom="351dp"
+        android:fontFamily="@font/bangers"
+        android:text="Winners Of The Day"
+        android:textAlignment="center"
+        android:textColor="#FFC107"
+        android:textSize="40sp" />
+
+
+    <TextView
+        android:id="@+id/tvModeClassic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mode: Classic"
+        android:fontFamily="@font/bangers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvModeClassic"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_winner" />
+
+        <TextView
+            android:id="@+id/tvPlayerClassic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img"
+            android:background="#FFEB3B"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Player: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvScoreClassic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPlayerClassic"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img"
+            android:background="#FFEB3B"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Score: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBestLevelClassic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPlayerClassic"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img"
+            android:background="#FFEB3B"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Level: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/tvModeChaos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="570dp"
+        android:layout_centerHorizontal="true"
+        android:text="Mode: Chaos"
+        android:fontFamily="@font/bangers"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvModeChaos"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/icon_winner" />
+
+        <TextView
+            android:id="@+id/tvPlayerChaos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img2"
+            android:background="#FF9800"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Level: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvScoreChaos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPlayerChaos"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img2"
+            android:background="#FF9800"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Score: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBestLevelChaos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPlayerChaos"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toEndOf="@+id/img2"
+            android:background="#FF9800"
+            android:fontFamily="@font/architects_daughter"
+            android:text="Level: None"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btnEmail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:scaleType="fitCenter"
+        android:src="@drawable/email_icon"
+        android:layout_marginStart="360dp"
+        android:layout_marginTop="15dp"/>
+
+
+</RelativeLayout>
