@@ -5,5 +5,7 @@ Final project in Software Engineering - Application Development in Android.
 
 See project book - "**Project_Book**" for additional information about the project.
 
+// To run the app in Android Studio please download the zip file: "AmitFinal.zip" for all the files in the project.
+
 
 
