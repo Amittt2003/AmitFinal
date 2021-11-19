@@ -1,5 +1,5 @@
 # AmitFinal
-Final project in software engineering - application development in Android.
+Final project in Software Engineering - Application Development in Android.
 
 **Game**: Simon Says + additional features.
 
